@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关键活动列表 (可折叠)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .collapsible-header {
+            background-color: #f1f1f1;
+            color: #444;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            margin-top: 5px;
+            border-radius: 4px;
+            position: relative; /* Needed for the icon */
+            transition: background-color 0.3s ease;
+        }
+        
+        .collapsible-header:hover {
+            background-color: #ddd;
+        }
+        
+        /* Style for the plus/minus icon */
+        .collapsible-header::before {
+            content: '+'; /* Plus sign by default */
+            font-weight: bold;
+            position: absolute;
+            right: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .collapsible-header.active::before {
+            content: '-'; /* Minus sign when active */
+            transform: rotate(180deg); /* Optional: rotate the minus */
+        }
+        
+        .collapsible-content {
+            padding: 0 18px;
+            max-height: 0; /* Start hidden */
+            overflow: hidden;
+            transition: max-height 0.3s ease-out; /* Smooth transition */
+            background-color: #f9f9f9;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        
+        .collapsible-content ul {
+             list-style-type: none; /* Remove default bullets */
+             padding-left: 10px;
+             margin-top: 10px;
+             margin-bottom: 10px;
+        }
+         .collapsible-content li {
+             margin-bottom: 5px;
+             color: #333;
+         }
+        
+    </style>
+</head>
+
+<body>
+
+    <h1>新远经营循环项目整体工作计划 - 关键活动</h1>
+
+    <div class="collapsible-section">
+        <button type="button" class="collapsible-header">1. 调研与方案 (Research & Solution)</button>
+        <div class="collapsible-content">
+            <ul>
+                <li>1.1 调研方案讨论与确认 (Research Plan Discussion & Confirmation)</li>
+                <li>1.2 问卷调研 (Questionnaire Survey)</li>
+                <li>1.3 高管访谈 (Executive Interviews)</li>
+                <li>1.4 改善方案设计 (Improvement Solution Design)</li>
+                <li>1.5 诊断报告和改善建议汇报 (Diagnostic Report & Improvement Suggestion Presentation)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="collapsible-section">
+        <button type="button" class="collapsible-header">2. 2025年一级组织&高管绩效 公司级项目 (2025 Tier-1 Org & Exec Performance / Company-level Projects)</button>
+        <div class="collapsible-content">
+            <ul>
+                <li>2.1 培训：绩效管理 (Training: Performance Management)</li>
+                <li>2.2 一级组织绩效&高管绩效 (Tier-1 Org Performance & Exec Performance)</li>
+                <li>2.3 组织绩效&高管绩效优化 (Org Performance & Exec Performance Optimization)</li>
+                <li>2.4 培训：公司级项目全流程管理 (Training: Company-Level Project Full Lifecycle Management)</li>
+                <li>2.5 公司级项目立项评审会 (Company-Level Project Initiation Review Meeting)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="collapsible-section">
+        <button type="button" class="collapsible-header">3. 战略规划 (Strategic Planning)</button>
+        <div class="collapsible-content">
+            <ul>
+                <li>3.1 公司战略项目工作方案设计 (Company Strategic Project Work Plan Design)</li>
+                <li>3.2 培训：战略管理基本体系&市场洞察 (Training: Basic Strategic Management System & Market Insight)</li>
+                <li>3.3 市场洞察 (Market Insight)</li>
+                <li>3.4 公司/事业部战略务虚会 (Company/BU Strategy Offsite Meeting)</li>
+                <li>3.5 公司/事业部战略规划研讨会 (Company/BU Strategic Planning Seminar)</li>
+                <li>3.6 公司/事业部战略规划编制及发布 (Company/BU Strategic Planning Formulation & Release)</li>
+                <li>3.7 战略专题研究 (Strategic Topic Research)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="collapsible-section">
+        <button type="button" class="collapsible-header">4. 2026年BP 经营规划 (2026 BP Business Planning)</button>
+        <div class="collapsible-content">
+            <ul>
+                <li>4.1 培训：年度经营规划方法论和工具 (Training: Annual Business Planning Methodology & Tools)</li>
+                <li>4.2 ABP制定 (ABP Formulation)</li>
+                <li>4.3 ABP评审、修订、定版 (ABP Review, Revision, Finalization)</li>
+                <li>4.4 年度预算制定 (Annual Budget Formulation)</li>
+                <li>4.5 年度预算评审、修订、定版 (Annual Budget Review, Revision, Finalization)</li>
+                <li>4.6 年度经营策略研讨会 (Annual Business Strategy Seminar)</li>
+                <li>4.7 组织绩效&高管绩效 (Org Performance & Exec Performance)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="collapsible-section">
+        <button type="button" class="collapsible-header">5. 战略执行与监控 (Strategy Execution & Monitoring)</button>
+        <div class="collapsible-content">
+            <ul>
+                <li>5.1 培训：开好经营分析会 (Training: How to Conduct Effective Business Analysis Meetings)</li>
+                <li>5.2 月度经营分析会 (Monthly Business Analysis Meeting)</li>
+                <li>5.3 公司级项目月会 (Company-Level Project Monthly Meeting)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="collapsible-section">
+        <button type="button" class="collapsible-header">6. 战略复盘 (Strategy Review/Retrospective)</button>
+        <div class="collapsible-content">
+            <ul>
+                <li>6.1 战略复盘 (Strategy Review/Retrospective)</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible-header");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active"); // Toggle the active class on the button
+            var content = this.nextElementSibling; // Get the content div next to the button
+            if (content.style.maxHeight){
+              content.style.maxHeight = null; // Collapse
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px"; // Expand
+            }
+          });
+        }
+    </script>
+
+</body>
+
+</html>
